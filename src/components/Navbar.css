@@ -1,0 +1,135 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #000000;
+  color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo {
+  height: 50px;
+  overflow: hidden;
+}
+
+.logo img {
+  height: 100px;
+  position: relative;
+  bottom: 20px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Add hover effect */
+.nav-links a::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  background: #007bff;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  transform: translateX(-50%) scaleX(1); /* Line expands on hover and for active section */
+}
+
+.nav-links a.active {
+  color: #007bff; /* Optional: change color for active link */
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.nav-links.active {
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    padding: 20px;
+    height: 100vh;
+    width: 60%;
+    background-color: #000000;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+  }
+
+  .nav-links li {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+  }
+
+  .nav-links li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background-color: #707070;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  /* Smaller hover underline for mobile */
+  .nav-links a::after {
+    width: 50%; /* Line size remains smaller on mobile */
+  }
+}

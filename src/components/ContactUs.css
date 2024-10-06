@@ -1,0 +1,54 @@
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black; /* Matches the dark theme */
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Spacing between the buttons and "or" circle */
+}
+
+.contact-button, .consultation-button {
+  background-color: #ff9900; /* Match branding */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover, .consultation-button:hover {
+  background-color: #e68a00;
+  transform: scale(1.05); /* Hover effect */
+}
+
+.consultation-button {
+  background-color: #00ccff; /* Different color for the consultation button */
+}
+
+.consultation-button:hover {
+  background-color: #00a3cc; /* Hover effect for consultation button */
+}
+
+/* Styling for the "or" Circle */
+.or-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff; /* White background for the circle */
+  color: #000; /* Black text inside the circle */
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0; /* Space between buttons */
+  border: 2px solid #ff9900; /* Optional: Adds a border matching the branding */
+}

@@ -1,0 +1,101 @@
+.footer {
+  background: linear-gradient(90deg, #000000, #434343); /* Dark gradient */
+  color: #ffffff; /* White text for contrast */
+  padding-bottom: 0 !important;
+  padding: 40px 20px; /* Padding */
+  text-align: center; /* Center text */
+}
+
+.container {
+  max-width: 1200px; /* Max width */
+  margin: 0 auto; /* Center container */
+}
+
+.footer-content {
+  display: flex; /* Flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-between; /* Space between items */
+  margin-bottom: 20px; /* Space below content */
+}
+
+.footer-logo {
+  flex: 1; /* Allow logo section to grow */
+  margin-right: 20px; /* Space on right */
+  font-style: italic;
+}
+
+.footer-logo img {
+  width: 50px; /* Set logo width */
+}
+
+.footer-contact {
+  flex: 1; /* Allow contact section to grow */
+  margin-right: 20px; /* Space on right */
+}
+
+.footer-contact h3 {
+  margin-bottom: 10px; /* Space below header */
+}
+
+.footer-social {
+  flex: 1; /* Allow social section to grow */
+}
+
+.footer-social h3 {
+  margin-bottom: 10px; /* Space below header */
+}
+
+.social-links {
+  display: flex; /* Flexbox for social links */
+  justify-content: center; /* Center links */
+  gap: 15px; /* Space between links */
+}
+
+.footer-bottom {
+  margin-top: 60px; /* Space above bottom text */
+  font-size: 0.9rem; /* Smaller font size */
+}
+
+.footer-bottom p {
+  margin: 0; /* Remove margin */
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column; /* Stack items on smaller screens */
+      align-items: center; /* Center items */
+  }
+
+  .footer-logo, .footer-contact, .footer-social {
+      margin: 10px 0; /* Space between stacked items */
+      text-align: center; /* Center text for mobile */
+  }
+}
+
+.footer-social .social-links {
+  display: flex; /* Flexbox for social links */
+  justify-content: center; /* Center links */
+  gap: 15px; /* Space between links */
+}
+
+.footer-social .social-links a {
+  color: #ffffff; /* White color for icons */
+  font-size: 1.5rem; /* Font size for icons */
+  transition: color 0.3s ease; /* Smooth color change */
+}
+
+.footer-social .social-links a:hover {
+  color: #007bff; /* Color change on hover */
+}
+
+.footer-social .social-links a {
+  color: #ffffff; /* White color for icons */
+  font-size: 1.5rem; /* Font size for icons */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
+}
+
+.footer-social .social-links a:hover {
+  color: #007bff; /* Color change on hover */
+  transform: scale(1.2); /* Zoom effect on hover */
+}
+
