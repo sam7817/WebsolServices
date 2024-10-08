@@ -6,6 +6,7 @@
   height: 100vh;
   background-color: #000000;
   color: white;
+  padding: 20px;
 }
 
 .hero-content {
@@ -14,7 +15,7 @@
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
 }
 
@@ -28,7 +29,7 @@
 
 .hero-description {
   margin-top: 20px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .hero-buttons {
@@ -55,4 +56,81 @@
 
 .btn:hover {
   background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 3.125rem;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+  }
+
+  .hero-buttons .btn {
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-buttons .btn {
+    padding: 6px 16px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .hero-buttons .btn {
+    padding: 5px 14px;
+  }
+}
+
+/* Responsive Typewriter Text */
+.typewriter-container h1, 
+.typewriter-container span {
+  font-size: 2rem; /* Default font size for larger screens */
+}
+
+/* Adjustments for medium screens */
+@media (max-width: 768px) {
+  .typewriter-container h1, 
+  .typewriter-container span {
+    font-size: 2rem; /* Smaller font size for tablets */
+  }
+}
+
+/* Adjustments for small screens */
+@media (max-width: 480px) {
+  .typewriter-container h1, 
+  .typewriter-container span {
+    font-size: 1.5rem; /* Smaller font size for mobile devices */
+  }
 }
