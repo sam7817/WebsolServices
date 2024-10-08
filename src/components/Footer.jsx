@@ -14,9 +14,9 @@ const Footer = () => {
                     <div className="footer-contact">
                         <h3>Contact Us</h3>
                         <p>
-                            <strong>Email:</strong> info@websolservices.com<br />
-                            <strong>Phone:</strong> +1 (234) 567-8900<br />
-                            <strong>Address:</strong> 123 Main Street, City, Country
+                            <strong>Email:</strong>websolservices01@gmail.com<br />
+                            <strong>Phone:</strong>+91 70378 60884<br />
+                            <strong>Address:</strong> Rampur, Uttar Pradesh - 244901, India
                         </p>
                     </div>
                     <div className="footer-social">
