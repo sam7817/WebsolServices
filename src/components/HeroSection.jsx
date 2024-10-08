@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Typewriter from 'react-typewriter-effect';
 import './HeroSection.css';
 
 const Hero = () => {
   const [fontSize, setFontSize] = useState('2rem');
+  const heroRef = useRef(null);
 
   // Dynamically adjust font size based on window width
   useEffect(() => {
@@ -23,8 +24,31 @@ const Hero = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Mouse move effect for background animation
+  useEffect(() => {
+    const heroElement = heroRef.current; // Store ref value in a variable
+
+    const handleMouseMove = (event) => {
+      const mouseX = event.pageX;
+      const mouseY = event.pageY;
+      const boundingRect = heroElement.getBoundingClientRect(); // Use stored value
+      const xPos = mouseX - boundingRect.left;
+      const yPos = mouseY - boundingRect.top;
+      const gradX = (xPos / boundingRect.width) * 100;
+      const gradY = (yPos / boundingRect.height) * 100;
+
+      heroElement.style.background = `radial-gradient(circle at ${gradX}% ${gradY}%, rgba(0, 123, 255, 0.6), rgba(0, 0, 0, 0) 60%)`;
+    };
+
+    heroElement.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      heroElement.removeEventListener('mousemove', handleMouseMove); // Use stored value
+    };
+  }, []);
+
   return (
-    <section id='home' className="hero">
+    <section id='home' className="hero" ref={heroRef}>
       <div className="hero-content">
         <h1 className="hero-title">
           Welcome to WebsolServices{' '}
