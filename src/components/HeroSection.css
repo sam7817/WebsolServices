@@ -71,6 +71,10 @@
   .hero-buttons .btn {
     padding: 8px 18px;
   }
+  
+  .hero {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 768px) {
@@ -90,6 +94,9 @@
     display: flex;
     flex-direction: column;
     font-size: 1rem;
+  }
+  .hero {
+    height: 100vh;
   }
 }
 
@@ -115,6 +122,9 @@
     display: flex;
     flex-direction: column;
     font-size: 1rem;
+  }
+  .hero {
+    height: 100vh;
   }
 }
 
