@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/WebsolServices/static/css/main.710afb93.css",
-    "main.js": "/WebsolServices/static/js/main.f810d52a.js",
-    "static/media/logo.png": "/WebsolServices/static/media/logo.9ea64f0cc65ab48e5a92.png",
-    "static/media/favicon.png": "/WebsolServices/static/media/favicon.cda386903001495fc223.png",
-    "index.html": "/WebsolServices/index.html",
-    "main.710afb93.css.map": "/WebsolServices/static/css/main.710afb93.css.map",
-    "main.f810d52a.js.map": "/WebsolServices/static/js/main.f810d52a.js.map"
+    "main.css": "/static/css/main.9249dfab.css",
+    "main.js": "/static/js/main.de6147b4.js",
+    "static/media/logo.png": "/static/media/logo.9ea64f0cc65ab48e5a92.png",
+    "static/media/favicon.png": "/static/media/favicon.cda386903001495fc223.png",
+    "index.html": "/index.html",
+    "main.9249dfab.css.map": "/static/css/main.9249dfab.css.map",
+    "main.de6147b4.js.map": "/static/js/main.de6147b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.710afb93.css",
-    "static/js/main.f810d52a.js"
+    "static/css/main.9249dfab.css",
+    "static/js/main.de6147b4.js"
   ]
 }
