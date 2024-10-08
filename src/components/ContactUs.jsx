@@ -7,7 +7,7 @@ const Contact = () => {
   };
 
   const handleConsultationClick = () => {
-    window.open('https://us14.list-manage.com/contact-form?u=62383a5c0fbd69428467f6a44&form_id=2829f545bb1fe73060a22710ab1837ac', '_blank'); // Replace with your consultation form link
+    window.open('http://eepurl.com/i0Vbjs'); // Replace with your consultation form link
   };
 
   return (
