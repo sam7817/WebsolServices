@@ -22,13 +22,13 @@ const Footer = () => {
                     <div className="footer-social">
                         <h3>Follow Us</h3>
                         <div className="social-links">
-                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/company/websolservices/" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.facebook.com/WebsolServices" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-facebook-f"></i>
                             </a>
-                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/websolservices/" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-instagram"></i>
                             </a>
                         </div>
