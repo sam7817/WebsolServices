@@ -55,7 +55,7 @@ const Services = () => {
                 <div className="cta-section">
                     <h2>Ready to Elevate Your Business?</h2>
                     <p>Contact us today to discover how our services can help you achieve your goals!</p>
-                    <a href="/contact" className="cta-button">Get a Free Consultation</a>
+                    <a href="http://eepurl.com/i0Vbjs" className="cta-button">Get a Free Consultation</a>
                 </div>
             </div>
         </div>

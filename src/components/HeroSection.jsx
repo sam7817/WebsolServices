@@ -77,7 +77,7 @@ const Hero = () => {
           We specialize in software development and digital marketing to help businesses thrive online.
         </p>
         <div className="hero-buttons">
-          <a href="#contact" className="btn primary-btn">
+          <a href="http://eepurl.com/i0Vbjs" className="btn primary-btn">
             Get a Free Consultation
           </a>
           <a href="#services" className="btn secondary-btn">
