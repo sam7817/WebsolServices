@@ -95,6 +95,11 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    position: relative;
+    right: 20px;
+  }
+
   .hero-title {
     font-size: 3rem;
   }
