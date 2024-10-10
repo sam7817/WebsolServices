@@ -97,8 +97,20 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .services-section {
+    padding: 10px 0 10px 0;
+    margin: 0 30px;
+  }
+
   .services-grid {
       grid-template-columns: 1fr; /* Single column on small screens */
       gap: 30px; /* Space between items */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    padding: 10px 0 10px 0;
+    margin: 0 30px;
   }
 }

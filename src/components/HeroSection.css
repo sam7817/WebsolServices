@@ -96,8 +96,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    position: relative;
-    right: 20px;
+    padding: 0;
   }
 
   .hero-title {
@@ -125,8 +124,9 @@
 @media (max-width: 480px) {
   .hero {
     flex-direction: column;
-    padding: 10px;
     height: auto;
+    padding: 0;
+    overflow-x: hidden;
   }
 
   .hero-title {

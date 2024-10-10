@@ -61,6 +61,14 @@
 }
 
 @media (max-width: 768px) {
+  .footer {
+    padding: 0 !important;
+  }
+
+  .container {
+    padding: 20px 0;
+  }
+
   .footer-content {
       flex-direction: column; /* Stack items on smaller screens */
       align-items: center; /* Center items */
@@ -99,3 +107,12 @@
   transform: scale(1.2); /* Zoom effect on hover */
 }
 
+@media (max-width: 480px) {
+  .footer {
+    padding: 0 !important;
+  }
+
+  .container {
+    padding: 20px 0;
+  }
+}
